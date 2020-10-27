@@ -1,0 +1,13 @@
+.button a {
+    color: white;
+}
+
+.button a:hover{
+     text-decoration: none;
+     color: white;
+}
+
+
+.imagen img{
+    width: 100px !important;
+}

@@ -1,0 +1,278 @@
+#main{
+    background-image: url("../img/Imagenes/Artboard1copia3copy8.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+
+}
+
+
+
+nav li a{
+    color: black;
+}
+
+nav li{
+    margin-right: 100px;
+    
+}
+
+
+.bordes1 button{
+    border-radius: 20px;
+}
+
+.border1 button a{
+    color:white;
+}
+
+#proyectos a:active{
+    border: none !important;
+}
+
+#proyectos li:active{
+    border: none !important;
+}
+
+.height {
+    height: 500px;
+    position: relative !important;
+}
+
+.height .titulo h1{
+    display: block !important;
+    border: 2px solid white;
+    border-radius: 30px;
+    display: inline-block;
+    margin: auto;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.height .titulo h2{
+
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 20px;
+    display: inline-block;
+   padding: 10px;
+    margin-top: 30px;
+    margin-left: 200px;
+    background-color: white;
+
+}
+
+.height .titulo{
+position: absolute;
+    bottom: 0;
+    left: 250px;
+}
+
+#main .titulo i{
+    color: white!important;
+    font-size: 20px !important;
+    margin-left: 5px;
+}
+
+
+.footer a, .footer p{
+    color: white;
+}
+
+.main .footer .redes i, #contacto .footer .redes i{
+    font-size: 20px;
+    color: white;
+    margin-right: 20px;
+
+}
+
+
+
+.activo {
+    border: 2px solid red;
+    border-radius: 30px;
+    
+}
+
+#sobre-mi, #proyectos{
+    background-image: url("../img/Imagenes/Artboard1copia3copy9.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#sobre-mi .redes i{
+    font-size: 38px;
+    color: red;
+    margin-right:20px;
+}
+
+.article{
+border-radius: 20px !important;
+
+}
+
+#idiomas{
+    background-color: #d6cdcd;
+}
+
+.idioma i{
+    width: 30%;
+    height: 120px;
+    background-color: #792b6e;
+    border-radius: 15px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.idioma{
+    border-radius:15px ;
+    background-color: white;
+}
+
+.idioma p{
+    font-size: 10px;
+}
+
+.titulo i{
+
+    font-size: 50px;
+    color:#792b6e;
+}
+
+.titulo h2, .empresa, .descripcion{
+    color:#792b6e ;
+}
+
+.bg-dark{
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.empleo{
+    border: 1px solid #f4f4f4;
+    border-radius: 20px;
+}
+
+.descripcion{
+    font-size: 12px;
+}
+
+.empleo img{
+    width: 80px;
+    height: 80px;
+}
+
+.empleo .btn{
+    border: 1px solid #792b6e;
+    border-radius: 20px;
+    color: white;
+    background-color:#792b6e;
+}
+
+#educacion{
+    background-color: #dbd0d0;
+}
+
+.estudio {
+    background-color: white;
+}
+
+.titulo2 h2, .titulo2 i{
+    color: red;
+}
+
+.estudio .empresa, .estudio .descripcion{
+    color: red;
+}
+
+.estudio .btn{
+    border: 1px solid red;
+    border-radius: 20px;
+    background-color: red;
+}
+
+#educacion .footer p, #educacion .footer i, #educacion .footer a{
+    color: red;
+ 
+}
+
+#educacion .footer .redes i{
+       font-size: 25px;
+       margin-right: 20px;
+}
+
+.whats{
+    background-color:#792b6e;
+    border: 1px solid #792b6e;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   height: 60px;
+}
+
+.whats i{
+    color: white!important;
+    line-height: 3;
+    text-align: center;
+    font-size: 20px;
+}
+
+#proyectos .article{
+    border: 1px solid #f4f4f4;
+    border-radius: 10px !important;
+    
+}
+
+.article h6{
+background: rgb(184,11,41);
+background: linear-gradient(90deg, rgba(184,11,41,1) 0%, rgba(240,22,49,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.article .btn{
+    border-radius: 20px!important;
+}
+
+.article a{
+    color: red;
+    font-weight: bold;
+}
+
+.bg-red{
+    background-color: red;
+    color: white;
+}
+
+#proyectos .footer p, #proyectos .footer i, #proyectos .footer a{
+    color: red;
+ 
+}
+
+#proyectos .footer .redes i{
+       font-size: 25px;
+       margin-right: 20px;
+       margin-left:0;
+}
+
+#contacto{
+   
+    background-image: url("../img/Imagenes/fondo4.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#contacto .btn button{
+    border-radius: 20px !important;
+    font-weight: bold;
+}
+
+textarea{
+    height: 150px !important;
+}
+
