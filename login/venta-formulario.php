@@ -229,12 +229,12 @@ if(isset($_POST["btnCerrar"])){
              </div >
               <div class="col-6 form-group">
                 <label for="cantidad">Cantidad:</label>
-                <input type="number" class="form-control" id="cantidad" name="cantidad"  value="<?php echo $venta->cantidad; ?>">
+                <input type="number" class="form-control" id="txtCantidad" name="cantidad"  value="<?php echo $venta->cantidad; ?>">
              
              </div >
              <div class="col-6 form-group">
                 <label for="txtTotal">Total:</label>
-                <input type="number" class="form-control" id="txtTotal" name="total"  value="<?php echo $venta->total; ?>">
+                <input type="number" class="form-control" id="txtTotal" name="total" onclick="fCalcularTotal()" value="<?php echo $venta->total; ?>">
              
              </div >
             

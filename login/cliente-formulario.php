@@ -5,9 +5,10 @@ include_once "config.php";
 include_once "entidades/cliente.php";
 include_once "entidades/provincia.entidad.php";
 include_once "entidades/localidad.entidad.php";
+include_once "entidades/domicilio.entidad.php";
 
 $cliente = new Cliente();
-$cliente->cargarformulario($_REQUEST);
+$cliente->cargarFormulario($_REQUEST);
 $msg=array();
 
 
@@ -49,6 +50,18 @@ if(isset($_GET["id"])&&$_GET["id"]>0){
   
 
 }
+
+if (isset($_POST["txtTipo"])) {
+    $domicilio = new Domicilio();
+    $domicilio->eliminarPorCliente($cliente->idcliente);
+    for ($i = 0; $i < count($_POST["txtTipo"]); $i++) {
+      $domicilio->fk_idcliente = $cliente->idcliente;
+      $domicilio->fk_tipo = $_POST["txtTipo"][$i];
+      $domicilio->fk_idlocalidad =  $_POST["txtLocalidad"][$i];
+      $domicilio->domicilio = $_POST["txtDomicilio"][$i];
+      $domicilio->insertar();
+    }
+  } 
 
 
 if(!isset($_SESSION["nombre"])){
@@ -418,7 +431,24 @@ function fBuscarLocalidad(){
             });
         }
 
+function fAgregarDomicilio(){
+            var grilla = $('#grilla').DataTable();
+            grilla.row.add([
+                $("#lstTipo option:selected").text() + "<input type='hidden' name='txtTipo[]' value='"+ $("#lstTipo option:selected").val() +"'>",
+                $("#lstProvincia option:selected").text() + "<input type='hidden' name='txtProvincia[]' value='"+ $("#lstProvincia option:selected").val() +"'>",
+                $("#lstLocalidad option:selected").text() + "<input type='hidden' name='txtLocalidad[]' value='"+ $("#lstLocalidad option:selected").val() +"'>",
+                $("#txtDireccion").val() + "<input type='hidden' name='txtDomicilio[]' value='"+$("#txtDireccion").val()+"'>"
+            ]).draw();
+            $('#modalDomicilio').modal('toggle');
+            limpiarFormulario();
+        }
 
+ function limpiarFormulario(){
+            $("#lstTipo").val("");
+            $("#lstProvincia").val("");
+            $("#lstLocalidad").val("");
+            $("#txtDireccion").val("");
+        }
 </script>
 
 

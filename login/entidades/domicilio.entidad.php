@@ -19,8 +19,8 @@ class Domicilio{
     }
 
     public function insertar(){
-        $mysql = new mysqli(Config::BBDD_HOST, Config::BBDD_USUARIO, Config::BBDD_CLAVE, Config::BBDD_NOMBRE);
-        $mysql->query("INSERT INTO domicilios (
+        $mysqli = new mysqli(Config::BBDD_HOST, Config::BBDD_USUARIO, Config::BBDD_CLAVE, Config::BBDD_NOMBRE);
+       $resultado = $mysqli->query("INSERT INTO domicilios (
             fk_idcliente, 
             fk_tipo, 
             fk_idlocalidad, 
@@ -29,6 +29,10 @@ class Domicilio{
             $this->fk_tipo, 
             $this->fk_idlocalidad, 
             '$this->domicilio')");
+    if(!$resultado){
+        printf("Error en query: %s\n", $mysqli->error);
+    }
+        $mysqli->close();
     }
 
     public function eliminarPorCliente($idCliente){
